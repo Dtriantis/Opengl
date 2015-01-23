@@ -201,11 +201,11 @@ void DrawCube(int i, int j, int k, int color1)
 
 void DrawSphere(int i, int j, int k){
 	
-							glPushMatrix();
-							glColor3f(1.0, 0.5, 0.0);
-							glTranslatef(i,j,k);
-							glutSolidSphere(0.3, 50, 40);
-							glPopMatrix();
+	glPushMatrix();
+	glColor3f(1.0, 0.5, 0.0);
+	glTranslatef(i,j,k);
+	glutSolidSphere(0.3, 50, 40);
+	glPopMatrix();
 	
 }
 
@@ -247,10 +247,10 @@ void renderMatrix(){
                            DrawCube(w,x,q,3); 
               //magenta cube
               if(game_matrix[w][x][q]==4)
-                           DrawCube(w,x,q,4);
+                        DrawCube(w,x,q,4);
               //draw light solid sphere
               if(game_matrix[w][x][q]==-2)
-							DrawSphere(w,x,q);                          
+			DrawSphere(w,x,q);                          
               }
          }
     }              
