@@ -32,6 +32,9 @@ bool pisw = true;
 bool dexia = false;
 bool aristera = false;
 
+//game matrix
+float game_matrix[N][N][N];
+int game_score = 50;
 int move_count=0;
 
 //lights
@@ -63,7 +66,7 @@ int yDragStart = 0; // records the x-coordinate when dragging starts
 // actual vector representing the camera's direction
 float lx=0.0f,lz=-1.0f;
 
-//dika mou
+//for camera control camera
 float k=1.0f,ax=0.0f,ay=0.0f;
 float y2=0.0f;
 float Y3=0.0;	//change hight in y-axis
@@ -71,10 +74,6 @@ float Y3=0.0;	//change hight in y-axis
 // XZ initial camera position
 float x=32.4f,z=32.4f,y=2.0f;
 float XXX=0.0f;
-
-float game_matrix[N][N][N];
-
-int game_score = 50;
 
 /**************************************************/
 /*********************COLORS***********************/
