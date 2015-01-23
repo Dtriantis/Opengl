@@ -10,4 +10,4 @@
 - by pressing **L** and create an additional light for **30** moves
 - by pressing **Spacebar** you can see **Score** and make the block under the player **blue** and absorb it's stock
 
-Compile with : g++ grafpro.cpp -lglut -lGL -lGLU
+Compile with : g++ myMineCraft.cpp -lglut -lGL -lGLU
